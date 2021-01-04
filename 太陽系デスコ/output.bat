@@ -1,0 +1,2 @@
+ffmpeg.exe -i sm30469574.mp4 sm30469574.wav
+ffmpeg.exe -f lavfi -i color=c=#ff5455:size=1920x1080:rate=60 -r 60 -i sm30469574.wav -vf ass=disco.ass,scale="-1:1080" -c:v libx264 -c:a aac -b:v 4000k -t 00:03:23 SolarSystemDisco.mp4

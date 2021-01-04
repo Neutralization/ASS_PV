@@ -1,0 +1,1 @@
+ffmpeg.exe -f lavfi -i color=c=#114475:size=1920x1080:rate=60 -r 60 -i Nyanyanyanyanyanyanya.wav -vf ass=nyancat.ass,scale="-1:1080" -c:v libx264 -c:a aac -b:v 4000k -t 00:03:50 NyanCat.mp4

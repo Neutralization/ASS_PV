@@ -1,0 +1,2 @@
+ffmpeg.exe -i 【おちゃめ機能】犬山たまきが吹っ切れた【歌ってみた】.mp4 【おちゃめ機能】犬山たまきが吹っ切れた【歌ってみた】.wav
+ffmpeg.exe -f lavfi -i color=c=#000000:size=1920x1080:rate=60 -r 60 -i 【おちゃめ機能】犬山たまきが吹っ切れた【歌ってみた】.wav -vf ass=ochamekinon.ass,scale="-1:1080" -c:v libx264 -c:a aac -b:v 4000k -t 00:01:30 ochamekinon.mp4

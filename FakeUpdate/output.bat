@@ -1,0 +1,1 @@
+ffmpeg.exe -f lavfi -i color=c=#006DAE:size=1920x1080:rate=60 -r 60 -vf ass=fakeupdate.ass,scale="-1:1080" -c:v libx264 -b:v 4000k -t 00:10:00 FakeUpdate.mp4
